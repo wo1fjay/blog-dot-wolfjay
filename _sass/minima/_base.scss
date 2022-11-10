@@ -1,0 +1,369 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: ($spacing-unit*0.3) ;
+}
+
+
+
+/**
+ * `main` element
+ */
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+
+// Custom layout bits
+
+.post-list h3 {
+  margin-top: ($spacing-unit*0.05);
+}
+
+.post-header {
+  background-color:#00AF54;
+  max-width: 30rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 0px 1px #0B0A07;
+  padding-top: 0.2rem;
+}
+
+.post-content h2, h3, h4, h5, h6 {
+  margin-top: $spacing-unit*0.3;
+}
+
+.post-header h1 {
+  color: white;
+  line-height: ($spacing-unit * 1.3);
+  }
+
+.post-meta {
+  color: #0B0A07 !important;
+}
+
+.post-highlight {
+  text-align: left;
+  font-variation-settings: "wght" 220, "DIAC" 60;
+
+  line-height: ($spacing-unit * 1.3);
+  font-style: italic;
+  letter-spacing: 0.9;
+  color: #0B0A07;
+  // background-color: #FEB95F;
+  // border-bottom-style: solid;
+  // border-width: 1px;
+  // border-color: #0B0A07;
+  // padding-bottom: 0.1rem;
+  max-width: 60%;
+  // margin-left: auto;
+  // margin-right: auto;
+}
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.post-content ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FEB95F; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+.post-content li {
+  margin-bottom: 0.6em;
+}
+
+.post-content li p {
+  margin-top: -1.16em !important;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1;
+}
+
+body {
+  font-variation-settings: "wght" 90, "DIAC" 50;
+  font-feature-settings: "liga" on, "cpsp" on, "kern" on;
+  // line-height: 33px;
+}
+
+p {
+  line-height: ($spacing-unit * 0.7);
+  text-align: justify;
+}
+
+strong {
+  font-variation-settings: "wght" 180, "DIAC" 30;
+  font-weight: normal;
+  color: #1D262C;
+}
+
+h1 {
+  font-variation-settings: "wght" 400, "DIAC" 10;
+  color: #00AF54;
+  text-shadow:
+   -1px -1px 0 #0B0A07,  
+    1px -1px 0 #0B0A07,
+    -1px 1px 0 #0B0A07,
+     1px 1px 0 #0B0A07;
+  line-height: ($spacing-unit * 0.8);
+}
+
+h2 {
+  font-variation-settings: "wght" 130, "DIAC" 90;
+  line-height: ($spacing-unit * 0.9);
+  color: #00AF54;
+}
+
+h3 {
+  font-variation-settings: "wght" 100, "DIAC" 10;
+  line-height: ($spacing-unit * 0.7);
+}
+
+h4 {
+  font-variation-settings: "wght" 100, "DIAC" 10;
+  line-height: ($spacing-unit * 0.7);
+  margin-left: 1rem;
+  max-width: 30rem;
+}
+
+br {
+  height: ($spacing-unit * 1.3);
+}
+
+
+
+/**
+ * Links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+  font-variation-settings: "wght" 110, "DIAC" 90;
+
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover {
+    color: #FEB95F;
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  @include relative-font-size(1.125);
+  letter-spacing: 0px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  @include relative-font-size(0.9375);
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #eef; 
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 5));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 5));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/**
+ * Icons
+ */
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #{$grey-color};
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
+.social-media-list {
+  li + li {
+    padding-top: 5px;
+  }
+}
+
+
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: $spacing-unit;
+  width: 100%;
+  text-align: $table-text-align;
+  color: lighten($text-color, 18%);
+  border-collapse: collapse;
+  border: 1px solid $grey-color-light;
+  tr {
+    &:nth-child(even) {
+      background-color: lighten($grey-color-light, 6%);
+    }
+  }
+  th, td {
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  }
+  th {
+    background-color: lighten($grey-color-light, 3%);
+    border: 1px solid darken($grey-color-light, 4%);
+    border-bottom-color: darken($grey-color-light, 12%);
+  }
+  td {
+    border: 1px solid $grey-color-light;
+  }
+}

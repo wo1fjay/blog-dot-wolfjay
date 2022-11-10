@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/welcome-to-wolfjay.html</loc>
+<lastmod>2022-09-11T16:17:18+10:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/wolfjay-2021-2022-annual-report.html</loc>
+<lastmod>2022-09-27T16:17:18+10:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/getting-an-adult-adhd-diagnosis</loc>
+<lastmod>2022-11-09T21:56:18+11:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+</urlset>
