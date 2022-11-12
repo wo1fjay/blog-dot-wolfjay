@@ -120,7 +120,7 @@ a:hover { color: #FEB95F; text-decoration: underline; }
 
 .landing-links p { text-align: center; margin-top: 0px; margin-bottom: 0px; margin-left: 10px; margin-right: 10px; line-height: 20.592px; }
 
-.landing-links ul { margin-left: 0px; }
+.landing-links ul { margin-left: 0px; padding-left: 0px; }
 
 .landing-links-icon { max-height: 30px; max-width: 30px; }
 
