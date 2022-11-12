@@ -1,6 +1,5 @@
-/**
- * Reset some basic elements
- */
+// Reset
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -8,11 +7,172 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
 
 
-/**
- * Basic styling
- */
+ // Set `margin-bottom` to maintain vertical rhythm
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: ($spacing-unit*0.3) ;
+}
+
+
+// Wrapper
+
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 1.5));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 1.5));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+
+// Clear fix
+
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+// Header
+
+ .site-header {
+  border-top: none;
+  border-bottom: none;
+  min-height: $spacing-unit * 1.865;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  min-width: 200px !important;
+  min-height: 80px !important;
+  float: left;
+  background-image: url("images/blog-le-wolfjay-logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+
+// Site navigation
+
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+
+// Typography
+
+:root {
+  --nemon-wght: 400;
+  --nemon-ital: 0;
+}
+
+* {
+  font-variation-settings:  "wght" var(--nemon-wght),
+                            "ital" var(--nemon-ital);
+}
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
@@ -26,202 +186,74 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-  margin-bottom: ($spacing-unit*0.3) ;
-}
-
-
-
-/**
- * `main` element
- */
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
-}
-
-// Custom layout bits
-
-.post-list h3 {
-  margin-top: ($spacing-unit*0.05);
-}
-
-.post-header {
-  background-color:#00AF54;
-  max-width: 30rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: 0px 0px 0px 1px #0B0A07;
-  padding-top: 0.2rem;
-}
-
-.post-content h2, h3, h4, h5, h6 {
-  margin-top: $spacing-unit*0.3;
-}
-
-.post-header h1 {
-  color: white;
-  line-height: ($spacing-unit * 1.3);
-  }
-
-.post-meta {
-  color: #0B0A07 !important;
-}
-
-.post-highlight {
-  text-align: left;
-  font-variation-settings: "wght" 220, "DIAC" 60;
-
-  line-height: ($spacing-unit * 1.3);
-  font-style: italic;
-  letter-spacing: 0.9;
-  color: #0B0A07;
-  // background-color: #FEB95F;
-  // border-bottom-style: solid;
-  // border-width: 1px;
-  // border-color: #0B0A07;
-  // padding-bottom: 0.1rem;
-  max-width: 60%;
-  // margin-left: auto;
-  // margin-right: auto;
-}
-
-
-/**
- * Images
- */
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-  display: block;
-}
-
-figcaption {
-  font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: $spacing-unit;
-}
-
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-.post-content ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #FEB95F; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */ 
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
-
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
-}
-
-.post-content li {
-  margin-bottom: 0.6em;
-}
-
-.post-content li p {
-  margin-top: -1.16em !important;
-}
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  line-height: 1;
-}
-
-body {
-  font-variation-settings: "wght" 90, "DIAC" 50;
-  font-feature-settings: "liga" on, "cpsp" on, "kern" on;
-  // line-height: 33px;
+  // font-feature-settings: "liga" on, "cpsp" on, "kern" on;
 }
 
 p {
-  line-height: ($spacing-unit * 0.7);
-  text-align: justify;
+  line-height: ($spacing-unit * 0.65);
+  text-align: left;
 }
 
 strong {
-  font-variation-settings: "wght" 180, "DIAC" 30;
-  font-weight: normal;
-  color: #1D262C;
+  --nemon-wght: 450;
+}
+
+em {
+  --nemon-ital: 900;
 }
 
 h1 {
-  font-variation-settings: "wght" 400, "DIAC" 10;
-  color: #00AF54;
-  text-shadow:
+  @include relative-font-size(1.35);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.45);}
+    --nemon-wght: 800;
+    text-shadow:
    -1px -1px 0 #0B0A07,  
     1px -1px 0 #0B0A07,
     -1px 1px 0 #0B0A07,
      1px 1px 0 #0B0A07;
-  line-height: ($spacing-unit * 0.8);
+  line-height: ($spacing-unit *1);
 }
 
 h2 {
-  font-variation-settings: "wght" 130, "DIAC" 90;
-  line-height: ($spacing-unit * 0.9);
-  color: #00AF54;
+  @include relative-font-size(1.525);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.6);}
+  --nemon-wght: 400;
+  line-height: ($spacing-unit * 0.8);
+  color: $text-color;
+  padding-top: $spacing-unit * 0.2;
 }
 
 h3 {
-  font-variation-settings: "wght" 100, "DIAC" 10;
-  line-height: ($spacing-unit * 0.7);
+  @include relative-font-size(1.15);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.10);}
+    --nemon-wght: 400;
+    line-height: ($spacing-unit * 0.7);
+    color: $text-color;
+    padding-top: $spacing-unit * 0.2;
 }
 
 h4 {
-  font-variation-settings: "wght" 100, "DIAC" 10;
-  line-height: ($spacing-unit * 0.7);
-  margin-left: 1rem;
-  max-width: 30rem;
+  @include relative-font-size(1.05);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.05);}
+    --nemon-wght: 400;
+    line-height: ($spacing-unit * 0.55);
+    color: $text-color;
+    padding-top: $spacing-unit * 0.2;
 }
 
 br {
   height: ($spacing-unit * 1.3);
 }
 
+// Links
 
-
-/**
- * Links
- */
 a {
   color: $brand-color;
-  text-decoration: none;
-  font-variation-settings: "wght" 110, "DIAC" 90;
+  text-decoration: underline;
 
   &:visited {
     color: $brand-color;
@@ -242,9 +274,271 @@ a {
 }
 
 
-/**
- * Blockquotes
- */
+// Home Styling
+
+.page-content {
+  padding: $spacing-unit * 0.4;
+  flex: 1;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+  margin-bottom: $spacing-unit;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > a {
+    margin-bottom: $spacing-unit;
+  }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  margin-bottom:0rem !important;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.3);
+  line-height: 1;
+  font-variation-settings: "wght" 300, "DIAC" 50;
+  font-feature-settings: "liga" on, "cpsp" on, "kern" on;
+}
+
+
+// Post Styling
+
+.post-header {
+  background-color: $brand-color;
+  max-width: 32rem;
+  // margin-top: ($spacing-unit*0.8);
+  margin-bottom: ($spacing-unit*0.8);
+  padding: 1rem;
+  box-shadow: 0px 0px 0px 1px #0B0A07;
+  padding-top: 0.8rem;
+  color: #eef;
+}
+
+.post-meta {
+  color: #0B0A07 !important;
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit*1.2;
+}
+
+.post-content img {
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+.post-caption {
+  text-align: center;
+  @include relative-font-size(0.7);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Post Blog Styling
+
+.post-blog {
+  background-color: $text-color;
+  color: $background-color;
+  padding: $spacing-unit*0.4;
+}
+
+.post-blog h3 {
+  color: $background-color !important;
+}
+
+// Wolfjay Links Landing
+
+.landing-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.landing-header p {
+  @include relative-font-size(0.7);
+  line-height: $base-line-height * $base-font-size * 0.78;
+  text-align: center !important;
+}
+
+.wolfjay-logo {
+    margin-bottom: 0;
+    min-width: 200px !important;
+    min-height: 80px !important;
+    background-image: url("/assets/wolfjay-logo-2021.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landing-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-links h3 {
+  @include relative-font-size(1);
+  text-align: center;
+  margin-top: 10px0
+}
+
+.landing-links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include relative-font-size(0.8);
+  line-height: $base-line-height * $base-font-size * 1;
+  // background-color: #F4EADE;
+  margin-bottom: $spacing-unit*0.2;
+
+  color: #0B0A07;
+  width: auto;
+  text-decoration: underline;
+}
+
+.landing-links p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: $base-line-height * $base-font-size * 0.78;
+}
+
+.landing-links ul {
+  margin-left: 0px;
+}
+
+.landing-links-icon {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+
+// Wolfjay Portraits
+
+.wolfjay-portrait-square {
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0px 0px 0px 1px #0B0A07;
+    background: linear-gradient(124deg, #f9a230, #feb95f, #49d3b2, #22eaba, #633cfd, #4c28da);
+    background-size: 1200% 1200%;
+    -webkit-animation: wj-portrait-bg 42s ease infinite;
+    -moz-animation: wj-portrait-bg 42s ease infinite;
+    animation: wj-portrait-bg 42s ease infinite;
+}
+
+@-webkit-keyframes wj-portrait-bg {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@-moz-keyframes wj-portrait-bg {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@keyframes wj-portrait-bg { 
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+
+.wolfjay-portrait-square-fg {
+  background-image: url("images/wolfjay-illu-la-portrait-svgomg.svg");
+  background-size: 100px;
+  background-position-y: -50%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.wolfjay-portrait-rect {
+  width: 200px;
+  height: 240px;
+  box-shadow: 0px 0px 0px 1px #0B0A07;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background: linear-gradient(124deg, #f9a230, #feb95f, #49d3b2, #22eaba, #633cfd, #4c28da);
+  background-size: 1200% 1200%;
+  -webkit-animation: wj-portrait-bg 42s ease infinite;
+  -moz-animation: wj-portrait-bg 42s ease infinite;
+  animation: wj-portrait-bg 42s ease infinite;
+}
+
+@-webkit-keyframes wj-portrait-bg {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@-moz-keyframes wj-portrait-bg {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@keyframes wj-portrait-bg { 
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+
+.wolfjay-portrait-rect-fg {
+  background-image: url("images/wolfjay-illu-la-portrait-svgomg.svg");
+  background-size: 160px;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+
+// Blockquotes
+
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -259,10 +553,62 @@ blockquote {
 }
 
 
+// Lists
 
-/**
- * Code formatting
- */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.post-content ul li::before {
+  content: "\2022";  
+  color: #FEB95F; 
+  // font-weight: bold; 
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+.post-content li {
+  margin-bottom: 0.6em;
+}
+
+.post-content li p {
+  margin-top: -1.16em !important;
+}
+
+
+// Images
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+// Figures
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+// Code
+
 pre,
 code {
   @include relative-font-size(0.9375);
@@ -286,42 +632,8 @@ pre {
   }
 }
 
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 5));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 5));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
+// Icons
 
 .svg-icon {
     width: 16px;
@@ -339,10 +651,8 @@ pre {
 }
 
 
+// Tables
 
-/**
- * Tables
- */
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
@@ -365,5 +675,72 @@ table {
   }
   td {
     border: 1px solid $grey-color-light;
+  }
+}
+
+
+// Footer
+
+.site-footer {
+  padding: $spacing-unit 0;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+  width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }

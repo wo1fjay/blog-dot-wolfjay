@@ -53,33 +53,33 @@ Merch production was my next biggest expense, which is great because they were m
 
 ### some shit I wanna try 🫵 🌯 🧘‍♂️
 
-* __better reporting__  
-    So that I can have better data for next years report I should definitely track my budgets a lot better! would be sick to have per project budgets as well as year total income/expenses so I can suss the viability of projects.
+#### better reporting 
+So that I can have better data for next years report I should definitely track my budgets a lot better! would be sick to have per project budgets as well as year total income/expenses so I can suss the viability of projects.
 
-* __publishing + sync__  
-    I'm not interesting in playing the publishing game of endless soul destroying cowriting sessions churning out hearless songs that are mid at best just for a publisher to try hype up and drop the second you don't get thos streams BUT I do want to reach out to some sync agents and see if they want to rep my stuff so I can try and get some sync spots :)
+#### publishing + sync 
+I'm not interesting in playing the publishing game of endless soul destroying cowriting sessions churning out hearless songs that are mid at best just for a publisher to try hype up and drop the second you don't get thos streams BUT I do want to reach out to some sync agents and see if they want to rep my stuff so I can try and get some sync spots :)
 
-* __production skills__  
-    Want to get way better at production! Happy with how my guitar production work sounds after spending a bunch of time on it and investing in my setup and workflow, but want to be better at the electronic side of things. I've had a bunch of false starts in this over the last year or so, trying to buy and learn gear to help flesh out my understanding in this area (fucked around but didn't click with the waldorf blofeld, elektron digitakt, poly beebo) but want to have another run at things! I've been invited to be a part of [Melbourne Electronic Sound Studio](https://mess.foundation)'s 12 week advanced professional development course which will definitely help with this!<br><br>
+#### production skills 
+Want to get way better at production! Happy with how my guitar production work sounds after spending a bunch of time on it and investing in my setup and workflow, but want to be better at the electronic side of things. I've had a bunch of false starts in this over the last year or so, trying to buy and learn gear to help flesh out my understanding in this area (fucked around but didn't click with the waldorf blofeld, elektron digitakt, poly beebo) but want to have another run at things! I've been invited to be a part of [Melbourne Electronic Sound Studio](https://mess.foundation)'s 12 week advanced professional development course which will definitely help with this!
     
-    _(side note: I started writing this months ago and just had the final week of the advanced PD course at Mess and ugh yeah I'm way fucking better at elec production now lol BUT ALAS I NEED TO KEEP UP THE FACADE THAT I PUBLISHED THIS AT THE START OF THE FINANCIAL YEAR DESPITE IT NOW BEING OCTOBER)_
+_(side note: I started writing this months ago and just had the final week of the advanced PD course at Mess and ugh yeah I'm way fucking better at elec production now lol BUT ALAS I NEED TO KEEP UP THE FACADE THAT I PUBLISHED THIS AT THE START OF THE FINANCIAL YEAR DESPITE IT NOW BEING OCTOBER)_
 
-* __my live set__  
-    My live setup at the moment is a bit of a hangover from when I was playing live with a drummer, just playing along to a backing track without much interaction. I try augment it with some cool guitar stuff and manipulation with pedals but it doesn't feel right yet. I used to have an octatrack that i had to sell to pay rent when I first moved to Naarm (fuckin rip) and really want to grab a mk1 if one pops up at a decent price! Also I reckon the guitar live is a bit of a crutch for me, can't move around much when I'm playing and have had way more fun in rehearsals when I'm just singing. Want to try out using the octa for playback + sampling, and running my vocals through some of my pedals. Maybe have a little synth as well who knows hehe!
+#### my live set  
+My live setup at the moment is a bit of a hangover from when I was playing live with a drummer, just playing along to a backing track without much interaction. I try augment it with some cool guitar stuff and manipulation with pedals but it doesn't feel right yet. I used to have an octatrack that i had to sell to pay rent when I first moved to Naarm (fuckin rip) and really want to grab a mk1 if one pops up at a decent price! Also I reckon the guitar live is a bit of a crutch for me, can't move around much when I'm playing and have had way more fun in rehearsals when I'm just singing. Want to try out using the octa for playback + sampling, and running my vocals through some of my pedals. Maybe have a little synth as well who knows hehe!
 
-* __changing up my release process__  
-    I've been releasing stuff for the last few years through Sleep Well Records, run by Alyse Vellturo aka pronoun who's been the fuckin best. I've learned so much from her and become really good friends. Hanging out with her in NYC in march 2020 was fuckin surreal and made me real happy. I've started thinking about all the cool shit I could do if I cough maybe started my own label cough (thinking out loud here let's see how things go) 😬
+#### changing up my release process  
+I've been releasing stuff for the last few years through Sleep Well Records, run by Alyse Vellturo aka pronoun who's been the fuckin best. I've learned so much from her and become really good friends. Hanging out with her in NYC in march 2020 was fuckin surreal and made me real happy. I've started thinking about all the cool shit I could do if I cough maybe started my own label cough (thinking out loud here let's see how things go) 😬
 
-* __apply for some fuckin grants you grub__  
-    moneys sick, would love to have some money to do some things
+#### apply for some fuckin grants you grub 
+moneys sick, would love to have some money to do some things
 
-* __establish the wolfjay cinematic universe__  
-    Just want to do more shit! Like, idk, a blog! or some videos about shit I think is cool shit! wolfjay is a frame of mind, time isn't linear, etc, ie.
+#### establish the wolfjay cinematic universe 
+Just want to do more shit! Like, idk, a blog! or some videos about shit I think is cool shit! wolfjay is a frame of mind, time isn't linear, etc, ie.
 
-* __smaller slices more frequently__  
-    A friend was telling me about this shit they do, eating heaps of small meals a day instead of big meals, sounds like something that could be cool with making stuff. I like to have ideas for big things but folks I simply do not have the time or money or attention span to see it through, gonna try doing little things every few weeks instead and see how that shit goes. 🤡<br><br>
+#### smaller slices more frequently 
+A friend was telling me about this shit they do, eating heaps of small meals a day instead of big meals, sounds like something that could be cool with making stuff. I like to have ideas for big things but folks I simply do not have the time or money or attention span to see it through, gonna try doing little things every few weeks instead and see how that shit goes. 🤡<br><br>
 
-    Made a little spreadsheet situation to see the average time between releases of wolfjay music and golly it was simply too much time between releases. Since I started wolfjay in 2017 on average i've put something out every 5 months. Since I signed with sleep well it crept up to every 7 months. I just passed a year since I put anything out! Don't like that at all! More shit more often please!
+Made a little spreadsheet situation to see the average time between releases of wolfjay music and golly it was simply too much time between releases. Since I started wolfjay in 2017 on average i've put something out every 5 months. Since I signed with sleep well it crept up to every 7 months. I just passed a year since I put anything out! Don't like that at all! More shit more often please!
 
 I know there's a lot of goals there! let's see how I go! thanks for checking this out and I hope there was something in there for you :) ty for reading! love u! ciao ciao gossip wolfjay xoxo
 

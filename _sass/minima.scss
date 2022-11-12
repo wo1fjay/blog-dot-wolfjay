@@ -2,13 +2,13 @@
 
 // Define defaults for each variable.
 
-$base-font-family: elavar, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-size:   26px !default;
+$base-font-family: nemon, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   30px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.15 !default;
+$base-line-height: 1.25 !default;
 
-$spacing-unit:     40px !default;
+$spacing-unit:     56px !default;
 
 $text-color:       #0B0A07 !default;
 $background-color: #F2F4FF !default;
@@ -46,7 +46,7 @@ $on-laptop:        800px !default;
 // Import partials.
 @import
   "minima/base",
-  "minima/layout",
+  // "minima/layout",
   "minima/syntax-highlighting"
 ;
 
@@ -55,3 +55,23 @@ $on-laptop:        800px !default;
   font-family: 'elavar';
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'nemon';
+  src: url('fonts/ne-mon-var.woff2') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nemon';
+  src: url('fonts/ne-mon-var.woff2') format('truetype');
+  // font-variation-settings: "ital" 900;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-family: 'nemon';
+//   src: url('fonts/ne-mon-var.woff2') format('truetype');
+//   font-variation-settings: "wght" 500, "ital" 0;
+//   font-style: bold;
+// }
