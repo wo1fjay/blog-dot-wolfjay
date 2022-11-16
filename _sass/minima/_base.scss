@@ -467,6 +467,18 @@ a {
   max-width: 30px;
 }
 
+// Album Artwork
+
+.in-realtime-artwork {
+width: 300px;
+height: 300px;
+background-image: url("images/artwork/in-realtime-artwork-small.jpg");
+background-position-y: center;
+background-position-x: center;
+background-repeat: no-repeat;
+background-size: contain;
+margin-bottom: 1rem;
+}
 
 // Wolfjay Portraits
 

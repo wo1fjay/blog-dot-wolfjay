@@ -37,7 +37,7 @@ I did two different designs, both based on art my pal [@picapsso](https://instag
 
 The next biggest source of income for me was APRA AMCOS royalties, mostly because two of my songs got synced for an SBS show [The Heights](https://iview.abc.net.au/show/heights). They found my music after looking on [Triple J Unearthed](https://www.abc.net.au/triplejunearthed/artist/wolfjay/), and the show has been broadcast internationally which led to several larger than normal payments from APRA.
 
-Lastly, and somewhat unsurprisingly, streaming made up less than 1% of my income. I had to round it up for the graph in order for it to be visible. This is only made by my releases up to [She Calls To Me](https://wolfjay.bandcamp.com/track/she-calls-to-me), all of my releases after that were released on 'Sleep Well Records'. The deal I have with them is a 50/50 split for 7 years, and I only start getting paid after the costs recoup. I haven't gotten anything off streaming from these tracks yet.
+Lastly, and somewhat unsurprisingly, streaming made up less than 1% of my income. I had to round it up for the graph in order for it to be visible. This is only made by my releases up to [She Calls To Me](https://wolfjay.bandcamp.com/track/she-calls-to-me), all of my releases after that were released on 'Sleep Well Records'. The deal I have with them is a 50/50 split for 5 years, and I only start getting paid after the costs recoup. I haven't gotten anything off streaming from these tracks yet.
 
 ### expenses 🤑 🤡 😭
 
