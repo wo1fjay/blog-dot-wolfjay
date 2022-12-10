@@ -1,4 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-20T11:11:41+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blog.wolfjay.com</title><subtitle>🏳️‍🌈 non-binary independent songwriter/producer/artist, currently a local in naarm/melbourne AUS. @wo1fjay.</subtitle><entry><title type="html">Getting an adult ADHD diagnosis, and all the feelings that follow.</title><link href="http://localhost:4000/getting-an-adult-adhd-diagnosis" rel="alternate" type="text/html" title="Getting an adult ADHD diagnosis, and all the feelings that follow." /><published>2022-11-09T21:56:18+11:00</published><updated>2022-11-09T21:56:18+11:00</updated><id>http://localhost:4000/getting-an-adult-adhd-diagnosis</id><content type="html" xml:base="http://localhost:4000/getting-an-adult-adhd-diagnosis"><![CDATA[<h3 id="i-finally-worked-up-the-courage-to-ask-my-gp-for-a-referral-to-a-psychologist-for-an-attention-deficithyperactivity-disorder-adhd-screening-session-after-struggling-with-textbook-symptoms-for-as-long-as-i-can-remember">I finally worked up the courage to ask my GP for a referral to a Psychologist for an attention-deficit/hyperactivity disorder (ADHD) screening session, after struggling with textbook symptoms for as long as I can remember.</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-10T18:17:31+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blog.wolfjay.com</title><subtitle>🏳️‍🌈 non-binary independent songwriter/producer/artist, currently a local in naarm/melbourne AUS. @wo1fjay.</subtitle><entry><title type="html">Unstable Diffusion</title><link href="http://localhost:4000/unstable-diffusion" rel="alternate" type="text/html" title="Unstable Diffusion" /><published>2022-12-09T21:56:18+11:00</published><updated>2022-12-09T21:56:18+11:00</updated><id>http://localhost:4000/unstable-diffusion</id><content type="html" xml:base="http://localhost:4000/unstable-diffusion"><![CDATA[<p>My timelines were filled this week with artificial intelligence generated illustrations from comedians, musicians, friends, and family - <strong>all very convincingly capturing their likenesses</strong>.</p>
+
+<p>I tried out a few text prompt based AI art generators a few months ago when they first started making waves online. It was possible to make some visually interesting images if you found a sweet spot in the text prompt system, but for the most part their images generated were careless, smeary messes.</p>
+
+<p>What I was seeing now was <strong>different</strong>. Using an image based prompt system where the user uploads photos of themselves, the images I’ve seen from this new system are, despite being heavily stylised, distinctly recogniseable. They retain key details that make the user look like themselves. I recognised them instantly. They looked like my friends. <strong>They looked like my family.</strong></p>
+
+<p>Caught off guard by how far these tools had come in only a few months, I decided to take another look.</p>
+
+<h5 id="part-1">Part 1:</h5>
+<h2 id="tool-or-thief">Tool, or thief?</h2>
+
+<p>From my basic understanding and unscientific research, artificial intelligence systems work by analysing a data set, identifying patterns, then using that data to create rules to follow. A user gives it a prompt, either a word or a phrase or an image, and it generates something based on the prompt following the rules it’s created.</p>
+
+<p><strong>The more data the system has to work with, the more intricate the rules it can create, and the more detailed the result it generates will be.</strong></p>
+
+<p>I’ve <a href="https://every.to/superorganizers/linus-lee-is-living-with-ai">read about cases</a> where someone will feed an AI system with samples of their work, and use the system to augment and automate parts of their workflow. It seems like a very powerful and positive development. <strong>But what happens when your work is included in a data set without your consent, and used to generate things against your best interests?</strong></p>
+
+<p>Just yesterday I opened Instagram to see @Carlosbob, an artist I follow, <a href="https://www.instagram.com/p/Cl7MkmABQ9-/">posting about discovering that their work was in the latest release of LAION’s image-text dataset</a>.</p>
+
+<p><img src="../../../../../assets/images/ai-art/carlosbob-instagram.jpg" alt="carlosbob-instagram" /></p>
+
+<figcaption>"Did a quick search and found that almost every painting I've ever shared has been used to train the Al that Lensa is using to create portraits. Lensa app is making a profit on stolen, uncredited and uncompensated art."</figcaption>
+
+<p>So what is AI? Is it a useful tool? Or a faceless thief? Will it make things better? Or way way way fucking worse. Does it even matter? <strong>I tried to find out.</strong></p>
+
+<h5 id="part-2">Part 2:</h5>
+<h2 id="unstable-diffusion">Unstable Diffusion.</h2>
+
+<h3 id="--common-crawl">🚨 ❶ Common Crawl</h3>
+
+<p><a href="https://commoncrawl.org">Common Crawl</a> is where it all starts, a non-profit with the aim of “democratizing access to web information by producing and maintaining an open repository of web crawl data that is universally accessible and analyzable”.</p>
+
+<p>Basically, they look at billions of sites and records that content in a big database, <strong>which is free for anyone to access.</strong></p>
+
+<h3 id="--laion">🚨 ❷ LAION</h3>
+
+<p>The next step in the chain is <a href="http://laion.ai">LAION</a> (Large-Scale Artificial Intelligence Open Network), another non-profit that looks up all the content that Common Crawl lists in its database. In particular, it looks at images and their descriptions and adds them to something called a ‘dataset’.</p>
+
+<p>In September 2022, visual artist Lapine <a href="https://twitter.com/LapineDeLaTerre/status/1570889343845404672">shared on Twitter</a> that they had <strong>found photos of themself taken privately for clinical documentation by a Doctor in 2013 on <a href="https://haveibeentrained.com">‘Have I Been Trained’</a></strong>, a tool created to help artists see if their art had been included in an AI system dataset.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚩My face is in the <a href="https://twitter.com/hashtag/LAION?src=hash&amp;ref_src=twsrc%5Etfw">#LAION</a> dataset. In 2013 a doctor photographed my face as part of clinical documentation. He died in 2018 and somehow that image ended up somewhere online and then ended up in the dataset- the image that I signed a consent form for my doctor- not for a dataset. <a href="https://t.co/TrvjdZtyjD">pic.twitter.com/TrvjdZtyjD</a></p>&mdash; Lapine (@LapineDeLaTerre) <a href="https://twitter.com/LapineDeLaTerre/status/1570889343845404672?ref_src=twsrc%5Etfw">September 16, 2022</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>After the Doctors death in 2018, these images were stolen and published online, making them accessible by Common Crawl, which in turn meant they ended up in LAION’s dataset.</p>
+
+<p>That dataset currently contains <strong>5 billion entries</strong> of images and text descriptions. It’s LAION’s belief that if it is publicly accessible, it is appropriate to catalogue, <strong>regardless of the content, it’s copyright status, or any privacy concerns.</strong></p>
+
+<p><strong>They have no moderation process</strong> for what is entered into their dataset, and while they do accept requests to remove content, they only action requests if the content in question explicitly includes personally identifiable information like someones name, phone number, or address.</p>
+
+<p>It is trivially easy to take content from LAION’s dataset, <strong>which they make available for free for anyone</strong>, and cross reference it with other online services to quickly find someones personally identifiable information off just a photograph.</p>
+
+<p>Feeling anxious yet?</p>
+
+<h3 id="--stabilityai">🚨 ❸ Stability.ai</h3>
+
+<p>Stability.ai is the company resonsible for Stable Diffusion, currently one of the main image generating AI systems. They’re currently valued at over $1 billion, and <strong>distribute Stable Diffusion for free.</strong></p>
+
+<p><strong>They use LAION’s dataset to generate images, with no restrictions on what content can be created using their tools.</strong> This includes applying their tool to image of people without their knowledge or consent to create pornographic or violent imagery.</p>
+
+<p>Their founder, Emad Mostaque, told The Verge in September 22 that “ultimately, it’s peoples’ responsibility as to whether they are ethical, moral, and legal in how they operate this technology”.</p>
+
+<p><a href="https://stability.ai/blog/stable-diffusion-public-release">They acknowldged</a> when releasing the system to the public that it could be used to create unsafe content, but they hoped “everyone will use this in an ethical, moral and legal manner”.</p>
+
+<p><strong>They recently raised $101 million in their latest funding round to extend the scope of their tool to also include video and audio.</strong></p>
+
+<h3 id="--prisma-labs-and-their-peers">🚨 ❹ Prisma Labs and their peers</h3>
+
+<p>While heaps companies have been able to build AI image generation tools that use Stable Diffusion due to its open source distribution, Prisma Labs’ Lensa.ai is currently the most popular option.</p>
+
+<p>Though Prisma Labs say they delete all user data after 24 hours, they also say that <strong>they own the images you create. Forever. In perpetuity. With no way to opt out.</strong></p>
+
+<p>In the past, <strong>Prisma labs <a href="https://twitter.com/MildlyAmused/status/1598470417710469120/photo/3">received $2m in investment from Mail.ru</a>,</strong> which was founded by Yuri Milner, who acted as an intermediary for <strong>Vladimir Putin</strong> to make large investments in Facebook and Twitter between 2009 and 2011. They now <a href="https://twitter.com/PrismaAI/status/1598719118399705088?s=20&amp;t=K7tWIcEmLymPMmZqsPhSig">claim on social media</a> that Mail.ru stopped investing in Prisma Labs in 2019, and that the company has no involvement in Russia.</p>
+
+<p><strong>Another tool that offers this functionality, Different Diffusion Me,</strong> looks like a basic web front end for Stable Diffusion, but <strong>is actually run by Tencent,</strong> the Chinese multinational technology and entertainment conglomerate also responsible for TikTok. Tencent last made facial recognition news in 2021 when it used it’s tech to detect when underage users in China were attempting to avoid a state mandated digital curfew of 10pm.</p>
+
+<h5 id="part-3">Part 3:</h5>
+<h2 id="bleak-shit">Bleak shit.</h2>
+
+<p>AI generated content is going to affect us all significantly in the very near future. <strong>This is so much more than stylised avatars.</strong> This is about what makes us ourselves.</p>
+
+<p>For decades, we’ve been told to be active on platforms. To share our work, our process, our private lives, ourselves. And in return we’ll be granted visibility. An audience. Attention. Maybe a career, or oppurtunities, or income, or fame.</p>
+
+<p><strong>But what happens when all of that content, all of that imagery, all of those private details find their way into a dataset like LAION’s?</strong></p>
+
+<p>What happens when someone uses Spotify’s vast database of music and metadata to extend your listening preferences with AI generated content? Maybe an AI won’t create the song you open Spotify to listen to, but what about the song that plays automatically after that?</p>
+
+<p>What happens when TikTok or Youtube start serving you supplementary content in the style of your favourite creator? Maybe they don’t try to pretend it’s them, but the avatar on your screen shares their face, or their voice?</p>
+
+<p><img src="../../../../../assets/images/ai-art/la-meme-young-spotify.jpg" alt="la-meme-young-spotify" /></p>
+
+<p>source: <a href="https://www.instagram.com/p/Cl6pZqvO-j3/?igshid=YmMyMTA2M2Y=">La Meme Young on Instagram</a></p>
+
+<p>What happens when you start getting served ads that feature a model who shares physical traits with people you’ve swiped right on on dating apps, or someone wearing an item of clothing you’ve been looking at online, while music plays that sounds <em>almost</em> like your current favourite song?</p>
+
+<p>What happens to your privacy if someone can impersonate you almost perfectly online? Or can post content that you’re not even sure you didn’t post yourself?</p>
+
+<p>What happens to the content we do post, if people become so used to their feeds being full of AI generated content? Will creators have to start emulating trends created by an AI system? What if AI generated content doesn’t replace human created art, but people are happy enough with this new category of simplified and personalised content that they just aren’t bothered with the extra messiness of something made by a human?</p>
+
+<p><strong>What will our art be worth then?</strong></p>
+
+<!-- What happens to consumers of content if they become so hooked on tailor made content designed to ellicit a passive response so they keep consuming? When [criticised that they were censoring protest footage last year](https://www.buzzfeednews.com/article/ryanhatesthis/tiktok-users-are-finally-posting-about-hong-kong-but-only), TikTok said that the content wasn't proliferating across the platform because people just didn't want to see it. They preferred the sickly sweet, overly cheerful, non-critical, snack-sized content that the platform is known for. They had no interest in anything else.
+
+**This is happening now.** -->
+
+<h5 id="part-4">Part 4:</h5>
+<h2 id="being-online">Being online.</h2>
+
+<p>We aren’t at that point yet, but it’s not hard to imagine that future, and it’ll be enabled by the way we act online now.</p>
+
+<p><strong>What does it mean to “be online” if any action you take, or content you share, just helps an AI to become a better impersonation of you?</strong></p>
+
+<p>If any participation you have in a platform just strengthens a system designed to impede a users ability to act in their own best interest?</p>
+
+<p>In his talk <a href="https://www.youtube.com/watch?v=qIcM21l61TE">‘How Designers Ruined The World’</a>, Mike Monteiro talks about the effect creating things without also taking responsibility for them can have on the world. “When designers disregard the effect their work has on our environment they are best negligible, and at worst culpable”. When design is practiced without forethought to consequences, without responsibility, what we get is not creation - but destruction.”</p>
+
+<p>I see very little difference in this context between designers and anyone who is active online.</p>
+
+<p>What responsibility do we have? To each other, and to ourselves?</p>
+
+<h5 id="part-5">Part 5:</h5>
+<h2 id="wheres-the-brain">Where’s the brain?</h2>
+
+<p>I have memories of visiting my Grandma as a child, having recently gotten a new gizmo or gadget. Maybe a Gameboy, or an iPod, or a digital camera. Every single time her reaction to these toys was the same. Caution, verging on disdain.</p>
+
+<p>After several years of being aware of this, she gave a justification. <em>“If you can’t see where it’s brain is, don’t trust it.”</em></p>
+
+<p>I realised that while, to me, it made sense how these pieces of technology functioned, and what allowed them to perform their functions, it must have been a mystery to my elderly Ukrainian grandmother.</p>
+
+<p>But I now realise that while those memories are still vivid, I have not remembered that lesson while growing up. <strong>I am surrounded by and beholden to things that I absolutely do not understand.</strong> Systems and processes that I’ve put blind faith in. Either to make money, or participate in a community, or just because it’s what everyone else around me is doing.</p>
+
+<p>My privacy conscious friends have warned me of certain products or fads, but my reaction has often been “oh well, if it goes bad I guess we’ll all go down together”. A fool. What I hadn’t considered are the specific things in my life that are meaningful to me, and how quickly those things could be torn away from me using data I’ve handed over online without a second thought.</p>
+
+<p>I started this post wanting to better understand the mechanisms that are a part of AI systems, but upon finishing it I realise that <strong>I need to better understand the systems I’m apart of.</strong></p>
+
+<p>I started writing and researching yesterday morning, around 10:18am. I sat in my lounge room, next to my dog, with some music on. I moved to the kitchen in the afternoon. Today, I finished it off in my study. What have tech companies learned about me during that time? What data points of mine have been added to a dataset that may one day inform an AI system?</p>
+
+<p>Maybe they know from the ambient sensors in my tablet that I’ve had the lights off, but the curtains open.</p>
+
+<p>Maybe they know from the white noise coming through the microphone in my smartphone that I’ve had the air conditioner on./</p>
+
+<p>Maybe they know from the photo I sent a friend this morning that I’m wearing activewear, despite my smartwatch showing I’ve barely made any progress on my activitiy goals for the day.</p>
+
+<p><strong>How will this information be used?</strong> Will I see more Nike products in my timelines this week? Will I be shown different jobs from recruiters to apply for? Will my utility premiums increase because my provider can see I’m spending more time at home? Maybe my health insurance premiums will go up because I’ve been less active than normal.</p>
+
+<p><strong>Of all of these systems, I can definitely start saying no to the obviously superflous ones; the ones asking for my personal data in exchange for some anime avatars.</strong></p>
+
+<p>I can practice being more critical. I can begin to question if the systems around me are actually serving me, or the communities I’m a part of, or the art I want to create and surround myself with.</p>
+
+<p>And if not?</p>
+
+<h2 id="fuck-off"><strong>Fuck off.</strong></h2>]]></content><author><name></name></author><category term="wolfjay-lore" /><summary type="html"><![CDATA[art, AI, and responsibility]]></summary></entry><entry><title type="html">Adult ADHD</title><link href="http://localhost:4000/getting-an-adult-adhd-diagnosis" rel="alternate" type="text/html" title="Adult ADHD" /><published>2022-11-09T21:56:18+11:00</published><updated>2022-11-09T21:56:18+11:00</updated><id>http://localhost:4000/getting-an-adult-adhd-diagnosis</id><content type="html" xml:base="http://localhost:4000/getting-an-adult-adhd-diagnosis"><![CDATA[<h3 id="i-finally-worked-up-the-courage-to-ask-my-gp-for-a-referral-to-a-psychologist-for-an-attention-deficithyperactivity-disorder-adhd-screening-session-after-struggling-with-textbook-symptoms-for-as-long-as-i-can-remember">I finally worked up the courage to ask my GP for a referral to a Psychologist for an attention-deficit/hyperactivity disorder (ADHD) screening session, after struggling with textbook symptoms for as long as I can remember.</h3>
 
 <p>In primary school, I was just undisciplined, lazy, a “gifted student” who lacked the dedication to fulfil my potential.</p>
 
@@ -12,7 +163,7 @@
 
 <p>I thought it might just be anxious about money, so slowly got better-paying jobs. I thought it might be stress from turbulent living situations, so I moved out on my own. I thought it might be an addiction to work, so adopted a few dogs to keep me active and distract me from constantly working.</p>
 
-<p>But even after all of those things, I was still struggling all of the time. And a lot of my friends haven’t made it that far. <strong>A lot of my friends didn’t make it that far.</strong></p>
+<p>But even after all of those things, I was still struggling all of the time. And a lot of my friends haven’t made it that far. <strong>A few of my friends didn’t make it that far.</strong></p>
 
 <p>For a while, I thought I was just clever enough to keep my head above water despite everything. But now I realise it’s because despite undiagnosed ADHD I was given opportunities, flexibility, and the benefit of the doubt that isn’t given to everyone. I’m a young, 28-year-old, mostly healthy, white person, with a western name, who can easily pass as a straight white cis man in most situations.</p>
 
@@ -37,7 +188,7 @@
 
 <p>I’m moving forward with more of an understanding of my brain than I’ve ever had before, and I hope as many people as possible can have that same experience.</p>
 
-<p>If you’re a queer person who hasn’t been able to afford to go through the process of an ADHD screening, please reach out. My email is <a href="mailto:contact@wolfjay.com">contact at wolfjay dot com</a>. I don’t have much money, but I do have a small community of people who care. I’d like to help if I can, in whatever way is useful to you. Thank you for reading this, <em>and if you’re ever in doubt</em> - <strong>please know that you are human and that you aren’t alone.</strong></p>]]></content><author><name></name></author><category term="wolfjay-lore" /><summary type="html"><![CDATA[I was recently diagnosed with ADHD, and it made me think a lot about how my life could have otherwise looked up to this point.]]></summary></entry><entry><title type="html">wolfjay annual report: 2021-2022 hehe</title><link href="http://localhost:4000/wolfjay-2021-2022-annual-report.html" rel="alternate" type="text/html" title="wolfjay annual report: 2021-2022 hehe" /><published>2022-09-27T16:17:18+10:00</published><updated>2022-09-27T16:17:18+10:00</updated><id>http://localhost:4000/wolfjay-2021-2022-annual-report</id><content type="html" xml:base="http://localhost:4000/wolfjay-2021-2022-annual-report.html"><![CDATA[<h2 id="some-stuff-i-did-money-i-made-and-shit-i-spent-it-on-over-a-12-month-period-and-some-other-shit">some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit)</h2>
+<p>If you’re a queer person who hasn’t been able to afford to go through the process of an ADHD screening, please reach out. My email is <a href="mailto:contact@wolfjay.com">contact at wolfjay dot com</a>. I don’t have much money, but I do have a small community of people who care. I’d like to help if I can, in whatever way is useful to you. Thank you for reading this, <em>and if you’re ever in doubt</em> - <strong>please know that you are human and that you aren’t alone.</strong></p>]]></content><author><name></name></author><category term="wolfjay-lore" /><summary type="html"><![CDATA[I was recently diagnosed with ADHD, and it made me think a lot about how my life could have otherwise looked up to this point.]]></summary></entry><entry><title type="html">Annual Report ‘22</title><link href="http://localhost:4000/wolfjay-2021-2022-annual-report.html" rel="alternate" type="text/html" title="Annual Report ‘22" /><published>2022-09-27T16:17:18+10:00</published><updated>2022-09-27T16:17:18+10:00</updated><id>http://localhost:4000/wolfjay-2021-2022-annual-report</id><content type="html" xml:base="http://localhost:4000/wolfjay-2021-2022-annual-report.html"><![CDATA[<!-- ## some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit) -->
 
 <h3 id="some-context-4-u--️">some context 4 u 🫶 👨‍❤️‍💋‍👨</h3>
 
@@ -114,11 +265,11 @@
 
 <p>I know there’s a lot of goals there! let’s see how I go! thanks for checking this out and I hope there was something in there for you :) ty for reading! love u! ciao ciao gossip wolfjay xoxo</p>
 
-<h3 id="---">💸 📆 🛩 🍄</h3>]]></content><author><name></name></author><category term="wolfjay-lore" /><summary type="html"><![CDATA[some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit)]]></summary></entry><entry><title type="html">blog dot wolfjay dot com</title><link href="http://localhost:4000/welcome-to-wolfjay.html" rel="alternate" type="text/html" title="blog dot wolfjay dot com" /><published>2022-09-11T16:17:18+10:00</published><updated>2022-09-11T16:17:18+10:00</updated><id>http://localhost:4000/welcome-to-wolfjay</id><content type="html" xml:base="http://localhost:4000/welcome-to-wolfjay.html"><![CDATA[<p>uh hi :)</p>
+<h3 id="---">💸 📆 🛩 🍄</h3>]]></content><author><name></name></author><category term="wolfjay-lore" /><summary type="html"><![CDATA[some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit)]]></summary></entry><entry><title type="html">welcome 2 blog city</title><link href="http://localhost:4000/welcome-to-wolfjay.html" rel="alternate" type="text/html" title="welcome 2 blog city" /><published>2022-09-11T16:17:18+10:00</published><updated>2022-09-11T16:17:18+10:00</updated><id>http://localhost:4000/welcome-to-wolfjay</id><content type="html" xml:base="http://localhost:4000/welcome-to-wolfjay.html"><![CDATA[<p>uh hi :)</p>
 
 <p>my name is jackie :) i’ve been doing stuff as wolfjay since 2017 :)</p>
 
-<p>This is a little blog for me to drop down thoughts about things. I’ve tried having a website in the past but I don’t think many people looked at it and it made me anxious about writing things on it because it looked so fancy and the writing wasn’t fancy.</p>
+<p>This is a little blog for me to drop down thoughts about things. I’ve tried having a website in the past bdsut I don’t think many people looked at it and it made me anxious about writing things on it because it looked so fancy and the writing wasn’t fancy.</p>
 
 <p>i’ve wanted a little blog for so long!</p>
 

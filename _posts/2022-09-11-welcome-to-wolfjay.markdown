@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "blog dot wolfjay dot com"
+title:  "welcome 2 blog city"
 date:   2022-09-11 16:17:18 +1000
 categories: wolfjay-lore
-excerpt: "hey hi my name is jackie nice 2 meet u :)"
+excerpt: "hey hi my name's jackie nice 2 meet u :)"
 description: "Some thoughts on blogging from Wolfjay"
 permalink: /welcome-to-wolfjay.html
 type: article
+color: "#C97342"
+emoji: "📝 🌇 💾"
 content: 
 ---
 
@@ -14,7 +16,7 @@ uh hi :)
 
 my name is jackie :) i've been doing stuff as wolfjay since 2017 :)
 
-This is a little blog for me to drop down thoughts about things. I've tried having a website in the past but I don't think many people looked at it and it made me anxious about writing things on it because it looked so fancy and the writing wasn't fancy.
+This is a little blog for me to drop down thoughts about things. I've tried having a website in the past bdsut I don't think many people looked at it and it made me anxious about writing things on it because it looked so fancy and the writing wasn't fancy.
 
 i've wanted a little blog for so long!
 

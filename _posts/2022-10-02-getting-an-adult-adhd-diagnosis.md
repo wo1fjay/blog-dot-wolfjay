@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "Getting an adult ADHD diagnosis, and all the feelings that follow."
+title:  "Adult ADHD"
+subtitle: "Waiting lists, Ritalin, and privilege"
 date:   2022-11-09 20:56:18 +1000
 categories: wolfjay-lore
-excerpt: "I was recently diagnosed with ADHD, and it made me think a lot about how my life could have otherwise looked up to this point."
+excerpt: "Waiting lists, Ritalin, and privilege"
 description: "I was recently diagnosed with ADHD, and it made me think a lot about how my life could have otherwise looked up to this point."
 type: article
 content:
 thumbnail:
 color: "#5A35F0"
 permalink: /getting-an-adult-adhd-diagnosis
+emoji: "🙃 ⏳ 💊"
 ---
 
 ### I finally worked up the courage to ask my GP for a referral to a Psychologist for an attention-deficit/hyperactivity disorder (ADHD) screening session, after struggling with textbook symptoms for as long as I can remember.
@@ -26,7 +28,7 @@ This led to really poor mental health, which led to mental health care plans, wh
 
 I thought it might just be anxious about money, so slowly got better-paying jobs. I thought it might be stress from turbulent living situations, so I moved out on my own. I thought it might be an addiction to work, so adopted a few dogs to keep me active and distract me from constantly working.
 
-But even after all of those things, I was still struggling all of the time. And a lot of my friends haven't made it that far. **A lot of my friends didn't make it that far.**
+But even after all of those things, I was still struggling all of the time. And a lot of my friends haven't made it that far. **A few of my friends didn't make it that far.**
 
 For a while, I thought I was just clever enough to keep my head above water despite everything. But now I realise it's because despite undiagnosed ADHD I was given opportunities, flexibility, and the benefit of the doubt that isn't given to everyone. I'm a young, 28-year-old, mostly healthy, white person, with a western name, who can easily pass as a straight white cis man in most situations. 
 

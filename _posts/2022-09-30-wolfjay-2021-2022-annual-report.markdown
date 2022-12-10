@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "wolfjay annual report: 2021-2022 hehe"
+title:  "Annual Report '22"
+subtitle: "some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit)"
 date:   2022-09-27 16:17:18 +1000
 categories: wolfjay-lore
 excerpt: "some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit)"
 permalink: /wolfjay-2021-2022-annual-report.html
+color: "#DA5DB7"
 redirect_from: /wolfjay/2022/09/27/wolfjay-2021-2022-annual-report.html
+emoji: "💸 👩‍🎨 😩"
 ---
 
-## some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit)
+<!-- ## some stuff I did, money I made, and shit I spent it on over a 12-month period (and some other shit) -->
 
 ### some context 4 u 🫶 👨‍❤️‍💋‍👨
 

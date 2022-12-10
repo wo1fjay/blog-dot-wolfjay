@@ -1,34 +1,34 @@
 ---
 layout: default
-type: 
+title:  "👀 😩 💚 🌷"
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
   {{ content }}
+  
+<section class="post-card-list">
 
-  {%- if site.posts.size > 0 -%}
-    <div class="wolfjay-portrait-square"><div class="wolfjay-portrait-square-fg"></div></div>
-    <h2>{{ page.list_title | default: "👀 😩 💚 🌷" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-          {{ post.excerpt }}
-      </li>
-      {%- endfor -%}
-    </ul>
+  {%- for post in site.posts -%}
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+    <a href="{{ post.url | relative_url }}">
 
-</div>
+      <div class="post-card" style="background-color:{{ post.color }}"">
+        <div class="post-card-header">
+          <div class="post-card-header-text">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h2>{{ post.title }}</h2>
+          </div>
+          <div class="post-card-header-emoji">{{ post.emoji }}</div>
+        </div>
+        <div class="post-card-body">
+          <p>{{ post.subtitle }}</p>
+        </div>
+      </div>
+
+    </a>
+
+  {%- endfor -%}
+
+</section>
