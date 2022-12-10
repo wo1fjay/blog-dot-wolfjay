@@ -55,8 +55,7 @@ The next step in the chain is [LAION](http://laion.ai) (Large-Scale Artificial I
 
 In September 2022, visual artist Lapine [shared on Twitter](https://twitter.com/LapineDeLaTerre/status/1570889343845404672) that they had **found photos of themself taken privately for clinical documentation by a Doctor in 2013 on ['Have I Been Trained'](https://haveibeentrained.com)**, a tool created to help artists see if their art had been included in an AI system dataset.
 
-{% twitter https://twitter.com/LapineDeLaTerre/status/1570889343845404672 %}
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚩My face is in the <a href="https://twitter.com/hashtag/LAION?src=hash&amp;ref_src=twsrc%5Etfw">#LAION</a> dataset. In 2013 a doctor photographed my face as part of clinical documentation. He died in 2018 and somehow that image ended up somewhere online and then ended up in the dataset- the image that I signed a consent form for my doctor- not for a dataset. <a href="https://t.co/TrvjdZtyjD">pic.twitter.com/TrvjdZtyjD</a></p>&mdash; Lapine (@LapineDeLaTerre) <a href="https://twitter.com/LapineDeLaTerre/status/1570889343845404672?ref_src=twsrc%5Etfw">September 16, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 After the Doctors death in 2018, these images were stolen and published online, making them accessible by Common Crawl, which in turn meant they ended up in LAION's dataset.
 
 That dataset currently contains **5 billion entries** of images and text descriptions. It's LAION's belief that if it is publicly accessible, it is appropriate to catalogue, **regardless of the content, it's copyright status, or any privacy concerns.**
