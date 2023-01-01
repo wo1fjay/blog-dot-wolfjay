@@ -136,6 +136,8 @@ article h2, h3, h4 { padding-top: 22.4px; }
 
 .post-caption { text-align: center; font-size: 18.2px; width: 70%; margin-left: auto; margin-right: auto; }
 
+.twitter-tweet { margin: 3rem auto 3rem auto !important; }
+
 .post-blog { background-color: #D5D0BB; color: #1E271E; padding: 22.4px; margin-bottom: 56px; }
 
 @media screen and (max-width: 800px) { .post-blog { margin-bottom: 0px; } }
