@@ -3,10 +3,10 @@
 // Define defaults for each variable.
 
 $base-font-family: nemon, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-size:   26px !default;
+$base-font-size:   22px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.975 !default;
-$base-line-height: 1.2 !default;
+$base-line-height: 1.3 !default;
 
 $spacing-unit:     56px !default;
 
@@ -24,9 +24,9 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    680px !default;
 $on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-laptop:        680px !default;
 
 // // Use media queries like this:
 // @include media-query($on-palm) {

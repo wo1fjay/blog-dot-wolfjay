@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: ($spacing-unit*0.3) ;
+  margin-bottom: calc($spacing-unit*0.3);
 }
 
 
@@ -59,8 +59,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: $spacing-unit * 0.3;
-  padding-right: $spacing-unit * 0.3;
+  padding-left: calc($spacing-unit) * 0.3;
+  padding-right: calc($spacing-unit) * 0.3;
   overflow: hidden;
   position: relative;
   z-index: 0;
@@ -115,7 +115,7 @@ header {
 }
 
 .site-header-page-info {
-  margin-bottom: $spacing-unit * 0.2;
+  margin-bottom: calc($spacing-unit) * 0.2;
 }
 
 .post-meta {
@@ -190,8 +190,8 @@ em {
 }
 
 hr {
-  margin-top: ($spacing-unit * 0.5);
-  margin-bottom: ($spacing-unit * 0.5);
+  margin-top: calc($spacing-unit * 0.5);
+  margin-bottom: calc($spacing-unit * 0.5);
   color: $brand-color;
   border-color: $brand-color;
 }
@@ -213,7 +213,7 @@ h2 {
   @include media-query($on-laptop) {
     @include relative-font-size(2.255);}
   // --nemon-wght: 400;
-  line-height: ($base-line-height);
+  line-height: ($base-line-height*0.8);
 }
 
 h3 {
@@ -238,16 +238,20 @@ h5 {
     @include relative-font-size(1.225);}
   --nemon-wght: 700;
   line-height: ($base-line-height);
-  margin-bottom: -($spacing-unit * 0.4);
-  margin-top: ($spacing-unit * 4);
+  margin-bottom: -calc($spacing-unit * 0.4);
+  margin-top: calc($spacing-unit * 4);
   color: $text-color;
-  
 }
+
 
 figcaption {
   --nemon-wght: 400;
   --nemon-ital: 900;
-  margin-bottom: ($spacing-unit);
+  margin-bottom: calc($spacing-unit);
+  text-align: center;
+  @include relative-font-size(0.725);
+  @include media-query($on-laptop) {
+    @include relative-font-size(0.5225);}
 }
 
 p .bigger {
@@ -256,7 +260,7 @@ p .bigger {
 }
 
 br {
-  height: ($spacing-unit * 1.3);
+  height: calc($spacing-unit * 1.3);
 }
 
 // Links
@@ -301,8 +305,8 @@ article a {
 }
 
 .home-header {
-  padding-left: $spacing-unit * 0.3;
-  padding-right: $spacing-unit * 0.3;
+  padding-left: calc($spacing-unit * 0.3);
+  padding-right: calc($spacing-unit * 0.3);
 }
 
 .page-heading {
@@ -315,7 +319,7 @@ article a {
 
 .post-list-heading {
   @include relative-font-size(1.75);
-  margin-bottom: $spacing-unit;
+  margin-bottom: calc($spacing-unit);
 }
 
 .post-card-list a {
@@ -330,8 +334,8 @@ article a {
 }
 
 .post-card {
-  padding: $spacing-unit * 0.4;
-  margin-bottom: $spacing-unit * 0.4;
+  padding: calc($spacing-unit * 0.4);
+  margin-bottom: calc($spacing-unit * 0.4);
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;
   will-change: transform;
@@ -342,7 +346,7 @@ article a {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   @include media-query($on-laptop) {
-    padding: $spacing-unit * 0.2;
+    padding: calc($spacing-unit * 0.2);
     transform: scale(0.95);
   }
 }
@@ -395,7 +399,7 @@ article a {
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
-  margin-bottom: $spacing-unit * 0.2;
+  margin-bottom: calc($spacing-unit * 0.2);
 }
 
 .post-link {
@@ -436,17 +440,17 @@ article a {
 // }
 
 .post-content {
-  margin-bottom: $spacing-unit*1.2;
-  margin-top: $spacing-unit*1.2;
+  margin-bottom: calc($spacing-unit*1.2);
+  margin-top: calc($spacing-unit*1.2);
   z-index: 99;
   @include media-query($on-laptop) {
-    padding-left: $spacing-unit * 0.3;
-    padding-right: $spacing-unit * 0.3;
+    padding-left: calc($spacing-unit * 0.3);
+    padding-right: calc($spacing-unit * 0.3);
   }
 }
 
 article h2,h3,h4 {
-  padding-top: $spacing-unit * 0.4;
+  padding-top: calc($spacing-unit * 0.4);
 }
 
 .post-content img {
@@ -475,8 +479,8 @@ article h2,h3,h4 {
 .post-blog {
   background-color: $text-color;
   color: $background-color;
-  padding: $spacing-unit*0.4;
-  margin-bottom: $spacing-unit;
+  padding: calc($spacing-unit*0.4);
+  margin-bottom: calc($spacing-unit);
   @include media-query($on-laptop) {
     margin-bottom: 0px;
   }
@@ -557,7 +561,7 @@ article h2,h3,h4 {
   line-height: $base-line-height * $base-font-size * 1;
   background-color: #F4EADE;
   border-radius: 5px;
-  margin-bottom: $spacing-unit*0.15;
+  margin-bottom: calc($spacing-unit*0.15);
   color: #0B0A07;
   text-decoration: none;
   padding: 6px 2px 6px 2px;
@@ -688,7 +692,7 @@ margin-bottom: 1rem;
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  padding-left: calc($spacing-unit / 2);
   @include relative-font-size(1.125);
   letter-spacing: 0px;
   font-style: italic;
@@ -702,7 +706,7 @@ blockquote {
 // Lists
 
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: calc($spacing-unit);
 }
 
 ul {
@@ -747,10 +751,6 @@ img {
 
 figure > img {
   display: block;
-}
-
-figcaption {
-  font-size: $small-font-size;
 }
 
 
@@ -801,7 +801,7 @@ pre {
 // Tables
 
 table {
-  margin-bottom: $spacing-unit;
+  margin-bottom: calc($spacing-unit);
   width: 100%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
@@ -813,7 +813,7 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: calc($spacing-unit / 3) (calc($spacing-unit / 2));
   }
   th {
     background-color: lighten($grey-color-light, 3%);
@@ -829,5 +829,5 @@ table {
 // Footer
 
 .site-footer {
-  padding: $spacing-unit * 0.3;
+  padding: calc($spacing-unit * 0.3);
 }

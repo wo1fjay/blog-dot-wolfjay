@@ -35,6 +35,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-twitter-plugin
+  - jekyll-seo
+  - jekyll-seo-tag
+  - nokogiri
 
 # Exclude from processing.
 # The following items will not be processed, by default.
