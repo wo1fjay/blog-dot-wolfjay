@@ -59,8 +59,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: calc($spacing-unit) * 0.3;
-  padding-right: calc($spacing-unit) * 0.3;
+  padding-left: calc($spacing-unit * 0.3);
+  padding-right: calc($spacing-unit * 0.3);
   overflow: hidden;
   position: relative;
   z-index: 0;
@@ -115,7 +115,7 @@ header {
 }
 
 .site-header-page-info {
-  margin-bottom: calc($spacing-unit) * 0.2;
+  margin-bottom: calc($spacing-unit * 0.2);
 }
 
 .post-meta {
