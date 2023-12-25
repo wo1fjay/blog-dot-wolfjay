@@ -34,8 +34,9 @@ group :jekyll_plugins do
   gem "jekyll-titles-from-headings"
   gem "jekyll-relative-links"
   gem "webrick"
-  gem 'kramdown-parser-gfm', '~> 1.1'
-  gem 'kramdown', '~> 2.0'
+  gem "kramdown-parser-gfm", "~> 1.1"
+  gem "kramdown", "~> 2.0"
+  gem "faraday-retry"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
