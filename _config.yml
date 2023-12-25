@@ -28,6 +28,10 @@ twitter_username: wo1fjay
 instagram_username:  wo1fjay
 permalink: pretty
 markdown: kramdown
+markdown_ext: markdown
+kramdown:
+  input: GFM
+
 
 # Build settings
 theme: minima
@@ -39,6 +43,17 @@ plugins:
   - jekyll-seo
   - jekyll-seo-tag
   - nokogiri
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - webrick
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

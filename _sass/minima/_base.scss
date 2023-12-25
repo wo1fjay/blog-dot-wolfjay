@@ -69,10 +69,11 @@ header {
 
 #header-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   height: 100% !important;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .site-header-nav {
@@ -81,6 +82,9 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-self: flex-start;
+  width: 100%;
+  height: auto;
 }
 
 .site-header-nav-links {
@@ -116,6 +120,8 @@ header {
 
 .site-header-page-info {
   margin-bottom: calc($spacing-unit * 0.2);
+  // align-self: center;
+  height: auto;
 }
 
 .post-meta {
@@ -180,9 +186,8 @@ p {
 }
 
 strong {
-  --nemon-wght: 500;
+  --nemon-wght: 600;
   font-style: normal !important;
-  color: $secondary-color;
 }
 
 em {
@@ -266,7 +271,7 @@ br {
 // Links
 
 a {
-  color: $text-color;
+  color: $secondary-color;
   text-decoration: none;
 
   &:visited {
@@ -690,16 +695,19 @@ margin-bottom: 1rem;
 // Blockquotes
 
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: calc($spacing-unit / 2);
+  color: $text-color;
   @include relative-font-size(1.125);
   letter-spacing: 0px;
-  font-style: italic;
 
   > :last-child {
     margin-bottom: 0;
   }
+}
+
+blockquote p {
+  text-align: center;
+  --nemon-ital: 600;
+  --nemon-wght: 400;
 }
 
 

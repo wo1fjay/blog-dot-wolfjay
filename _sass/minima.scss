@@ -60,9 +60,9 @@ $on-laptop:        680px !default;
 
 @font-face {
   font-family: 'nemon';
-  src: url('fonts/ne-mon-var.woff2') format('truetype');
-  // font-variation-settings: "ital" 900;
   font-style: italic;
+  src: url('fonts/ne-mon-var.woff2') format('truetype');
+  font-variation-settings: "ital" 900;
 }
 
 @font-face {

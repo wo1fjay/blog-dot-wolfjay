@@ -52,10 +52,11 @@ header {
 
 #header-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   height: 100% !important;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .site-header-nav {
@@ -64,6 +65,9 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-self: flex-start;
+  width: 100%;
+  height: auto;
 }
 
 .site-header-nav-links {
@@ -97,6 +101,7 @@ header {
 
 .site-header-page-info {
   margin-bottom: 11.2px;
+  height: auto;
 }
 
 .post-meta {
@@ -155,9 +160,8 @@ p {
 }
 
 strong {
-  --nemon-wght: 500;
+  --nemon-wght: 600;
   font-style: normal !important;
-  color: #EDA335;
 }
 
 em {
@@ -255,7 +259,7 @@ br {
 }
 
 a {
-  color: #D5D0BB;
+  color: #EDA335;
   text-decoration: none;
 }
 a:visited {
@@ -680,15 +684,18 @@ article h2, h3, h4 {
 }
 
 blockquote {
-  color: #433F29;
-  border-left: 4px solid #4a614a;
-  padding-left: 28px;
+  color: #D5D0BB;
   font-size: 24.75px;
   letter-spacing: 0px;
-  font-style: italic;
 }
 blockquote > :last-child {
   margin-bottom: 0;
+}
+
+blockquote p {
+  text-align: center;
+  --nemon-ital: 600;
+  --nemon-wght: 400;
 }
 
 ul, ol {
@@ -1001,8 +1008,9 @@ table td {
 }
 @font-face {
   font-family: "nemon";
-  src: url("fonts/ne-mon-var.woff2") format("truetype");
   font-style: italic;
+  src: url("fonts/ne-mon-var.woff2") format("truetype");
+  font-variation-settings: "ital" 900;
 }
 @font-face {
   font-family: "monument";
