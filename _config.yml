@@ -27,6 +27,7 @@ url: "http://blog.wolfjay.com" # the base hostname & protocol for your site, e.g
 twitter_username: wo1fjay
 instagram_username:  wo1fjay
 permalink: pretty
+markdown: kramdown
 
 # Build settings
 theme: minima
